@@ -1,0 +1,2 @@
+# Mirror Draw
+The screen is split down the middle with the left half being black and the right half being white. The user can draw on either side of the screen by pressing and holding a mouse button. When drawing on the left (black) side of the screen, the drawing will be mirrored on the right (white) side. Though, when drawing on the right (white) side the drawing will only appear on that side. Pressing the Spacebar will clear the screen.
