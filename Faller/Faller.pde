@@ -1,6 +1,6 @@
 /*
   Name: Faller
-  Author: ROdrick Moore
+  Author: Rodrick Moore
   Date: 9/24/19
   Description: Three different shapes begin in at the top of the screen.  
   Each shape is a different color and falls towards the bottom of the screen.  
