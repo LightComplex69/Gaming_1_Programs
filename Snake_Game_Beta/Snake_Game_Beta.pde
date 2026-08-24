@@ -18,39 +18,38 @@ void keyPressed()
 {
   if (key == 'a' || key == 'A')
   {
-    if (right == true)
-    {
-      left = false;
-    } else
+    if (!right)
     {
       left = true;
+      down = false;
+      up = false;
     }
-  } else if (key == 'd' || key == 'D')
+  }
+  if (key == 'd' || key == 'D')
   {
-    if (left == true)
-    {
-      right = false;
-    } else
+    if (!left)
     {
       right = true;
-    }
-  } else if (key == 'w' || key == 'W')
-  {
-    if (down == true)
-    {
+      down = false;
       up = false;
-    } else
+    }
+  }
+  if (key == 'w' || key == 'W')
+  {
+    if (!down)
     {
       up = true;
+      left = false;
+      right = false;
     }
-  } else if (key == 's' || key == 'S')
+  }
+  if (key == 's' || key == 'S')
   {
-    if (up == true)
-    {
-      down = false;
-    } else
+    if (!up)
     {
       down = true;
+      left = false;
+      right = false;
     }
   }
 }

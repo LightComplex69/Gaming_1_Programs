@@ -1,11 +1,12 @@
 class playScreen
 {
-  int snakeX, snakeY;
+  int snakeX, snakeY, snakeSpeed;
 
   playScreen()
   {
     snakeX = width/2+10;
     snakeY = height/2+10;
+    snakeSpeed = 10;
   }
 
   void area()
@@ -32,19 +33,19 @@ class playScreen
       line(50, y, width-50, y);
     }
 
-    if (snakeX >= width-80)
+    if (snakeX >= width-70)
     {
       right = false;
-    } 
-    if (snakeX <= 60)
+    }
+    if (snakeX <= 50)
     {
       left = false;
-    } 
-    if (snakeY >= height-80)
+    }
+    if (snakeY >= height-70)
     {
       down = false;
-    } 
-    if (snakeY <= 60)
+    }
+    if (snakeY <= 50)
     {
       up = false;
     }
@@ -57,19 +58,22 @@ class playScreen
     fill(#0BFF00);
     if (left == true)
     {
-      snakeX -= 20;
+      snakeX -= snakeSpeed;
       println("snakeX = " + snakeX);
-    } else if (down == true)
+    }
+    if (down == true)
     {
-      snakeY += 20;
+      snakeY += snakeSpeed;
       println("snakeY = " + snakeY);
-    } else if (up == true)
+    }
+    if (up == true)
     {
-      snakeY -= 20;
+      snakeY -= snakeSpeed;
       println("snakeY = " + snakeY);
-    } else if (right == true)
+    }
+    if (right == true)
     {
-      snakeX += 20;
+      snakeX += snakeSpeed;
       println("snakeX = " + snakeX);
     }
     rect(snakeX, snakeY, 20, 20);
