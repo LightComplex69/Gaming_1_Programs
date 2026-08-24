@@ -23,6 +23,15 @@ A compilation of programs from my first coding class.
   manners on the screen.  At least one movement should be non-linear 
   (e.g. zig zags are linear!).  The shapes should never leave the screen 
   and each should be of distinct color.
+- **Creating Classes**
+  * A square object with functions to draw and move itself (when it goes off screen, it reappears at the corner).
+- **Faller**
+  * Three different shapes begin in at the top of the screen.  
+  Each shape is a different color and falls towards the bottom of the screen.  
+  The background of each column is the complementary color of the shape color.  
+  Each shape falls at a different speed.  As the shapes fall they fade away and 
+  when they reach the bottom the process starts anew and the shape is visible and 
+  starts again at the top.
 ## Background
 Most of these applications were homework assignments or projects assigned to us in a Game Design class I took in high school. The class focused on programming fundamentals such as variables, functions, classes, loops, and lists. It then took these fundamentals and slowly introduced them into a game design context, which can be seen in some of the more interactive programs.  
 
