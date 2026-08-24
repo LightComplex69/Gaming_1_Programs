@@ -1,0 +1,2 @@
+# TimerToy
+A timer in the form of a bar is displayed at the top of the window. The first screen features a black circle that grows and changes color to blue overtime up to a certain size before resetting to its starting size and color. As the bar depletes it will change color from yellow to red to signify time almost running out. Once time runs out, the bar resets and the screen shifts to a white background with 4 black lines routing from the corners of the window to the mouse position. Once time runs out again, the screen returns back to the circle.
