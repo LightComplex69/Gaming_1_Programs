@@ -3,6 +3,7 @@ class Player
   PVector location, speed;
   PImage[] aigis;
   char u, l, d, r;
+  int currFrame;
 
   Player(float x, float y, char up, char left, char down, char right)
   {
@@ -12,6 +13,7 @@ class Player
     l = left;
     d = down;
     r = right;
+    currFrame = 0;
 
     aigis = new PImage[4];
 
@@ -23,13 +25,20 @@ class Player
 
   void update()
   {
-    frameRate(20);
     aigis[0].resize(80, 144);
     aigis[1].resize(80, 144);
     aigis[2].resize(80, 144);
     aigis[3].resize(80, 144);
 
-    image(aigis[frameCount%4], location.x, location.y);
+    if (frameCount%8 == 0) {
+      if (currFrame >= 3) {
+        currFrame = 0;
+      } else {
+        currFrame++;
+      }
+    }
+
+    image(aigis[currFrame], location.x, location.y);
   }
 
   void keyPressed()
