@@ -80,13 +80,13 @@ void keyPressed()
     state = 1;
   }
 
-  if (key == 'l')
-  {
-    vP1.x += 1;
-  }
-
   if (key == 'a')
   {
-    vP2.x -= 1;
+    vP1.x += 7;
+  }
+
+  if (key == 'l')
+  {
+    vP2.x -= 7;
   }
 }
