@@ -26,6 +26,10 @@ void draw()
   background(winColor);
   fill(#DEF25F);
   ellipse(rectX, rectY, 50, 50);
+  
+  fill(0);
+  textSize(40);
+  text('R', rectX-12, rectY+12);
 
   rectX += rxSpeed;
   rectY += rySpeed;
