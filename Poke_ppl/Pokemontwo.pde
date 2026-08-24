@@ -14,6 +14,7 @@ class Pokemon2
 
   void draw()
   {
+    tint(255);
     location.x = constrain(location.x, 0, width-64);
     location.y = constrain(location.y, 0, height - 80);
     
