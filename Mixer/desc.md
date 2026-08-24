@@ -1,0 +1,2 @@
+# Mixer
+A screen split down the middle with the left side being blue and the right side being yellow. Using the arrow keys, the user controls a green circle that starts on the far left of the screen. While the circle is on the left side of the screen, Another Medium by Toby Fox (from Undertale) will play. On the right side of the screen, Amalgam by Toby Fox (Undertale) will play. As the player moves back and forth between the sides, the music will continue playing from the point it stopped at. The song will replay when it ends.
